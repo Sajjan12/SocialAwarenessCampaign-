@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1751840141978,
+    "username": "prasaisajjan2020@gmail.com",
+    "password": "admin123",
+    "firstname": "Sajjan",
+    "lastname": "Prasai",
+    "email": "prasaisajjan2020@gmail.com",
+    "createdAt": "2025-07-06T22:15:41.978Z"
+  },
+  {
+    "id": 1751840201799,
+    "username": "prasaisajjan20201@gmail.com",
+    "password": "admin1234",
+    "firstname": "Sajjan",
+    "lastname": "Prasa",
+    "email": "prasaisajjan20201@gmail.com",
+    "createdAt": "2025-07-06T22:16:41.799Z"
+  },
+  {
+    "id": 1751840356528,
+    "username": "raju@gmail.com",
+    "password": "raju123",
+    "firstname": "raju",
+    "lastname": "lama",
+    "email": "raju@gmail.com",
+    "createdAt": "2025-07-06T22:19:16.528Z"
+  }
+]

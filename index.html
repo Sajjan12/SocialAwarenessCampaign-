@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Social Awareness Campaign - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Social Awareness Campaign</h1>
+      <!-- Menu Section-->
+     <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="news.html">News</a>
+        <a href="contact.html">Contact</a>
+        <a href="Campaign.html">Campaign</a>
+        <div class="user-info">
+        <span class="welcome-text">Welcome, User!</span>
+        <a href="indexsigninsignup.html" class="logout-btn">Logout</a>
+      </div>
+      </nav>
+    </div>
+  </header>
+ <section class="page-banner">
+  <!-- Image for home page -->
+    <img src="Images/home.png" alt="Home Banner">
+  </section>
+  <section class="hero">
+    <div class="container">
+      <h2>Stand Up for Human Rights</h2>
+      <p>We empower individuals and communities to protect and promote fundamental human rights for all.</p>
+    </div>
+  </section>
+<section id="approved-campaigns" class="container">
+  <h2>Featured Social Campaigns</h2>
+  <div id="campaignList"></div>
+</section>
+
+<script>
+  function loadApprovedCampaigns() {
+    const campaigns = JSON.parse(localStorage.getItem('campaigns')) || [];
+    const approved = campaigns.filter(c => c.approved === true);
+    const container = document.getElementById('campaignList');
+    container.innerHTML = '';
+
+    approved.forEach(c => {
+      const div = document.createElement('div');
+      div.classList.add('campaign-card');
+      div.innerHTML = `
+        <h3>${c.title}</h3>
+        <p>${c.description}</p>
+        <p><strong>Posted by:</strong> ${c.userType} (${c.email})</p>
+        <hr />
+      `;
+      container.appendChild(div);
+    });
+  }
+
+  window.addEventListener('DOMContentLoaded', loadApprovedCampaigns);
+</script>
+
+  <footer>
+    <div class="container">
+      <p>Follow us: <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+      <p>&copy; 2025 Human Rights Campaign</p>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
+

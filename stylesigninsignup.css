@@ -1,0 +1,199 @@
+
+@import url('https://fronts.googlespis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+body{
+    background:url("image1.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+
+}
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:110vh ;
+   background: rgba(39,39,39,0.4);
+
+
+}
+.nav{
+    position:fixed;
+    top: 0;
+    display:flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background:linear-gradient(rgba(39,39,39,0.6),transparent);
+    z-index:100;
+}
+.nav-logo p{
+    color:white;
+    font-size: 25px;
+    font-weight: 600;
+
+}
+.nav-menu ul{
+    display: flex;
+}
+
+.nav-menu ul li{
+    list-style-type: none;
+}
+.nav-menu ul li .link{
+    text-decoration: none;
+    font-weight: 500;
+    color: aliceblue;
+    padding-bottom: 15px;
+    margin: 0 25px;
+}
+
+.link:hover, .active{
+    border-bottom: 2px solid white;
+}
+.nav-button .btn{
+    width: 130px;
+    height:40px;
+    font-weight: 500;
+    background:gray;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .3 ease;
+
+
+
+}
+.btn:hover{
+    background:rgba(240,240,240,0.5); 
+}
+
+#registerbtn{
+    margin-left: 15px;
+}
+.btn.whitebtn{
+    background: rgba(240,240,240,0.9);
+}
+.btn.btn.whitebtn:hover{
+    background:rgba(240,240,240,0.1) ;
+}
+.nav-menu-btn{
+    display: none;
+}
+.form-box{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width:512px ;
+    height:450px;
+    overflow: hidden; 
+    z-index: 2;
+
+}
+.login-container{
+    position: absolute;
+    left: 4px;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.register-container{
+    position: relative;
+    right: -520px;
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    transition: .5s ease-in-out;
+}
+.top span{
+    color:white ;
+    font-size: small;
+    padding:10px 0;
+    display:flex;
+    justify-content: center;
+
+}
+.top span a{
+    font-weight: 500;
+    color: white;
+    margin-left: 5px;
+
+}
+header{
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0 30px 0;
+}
+
+
+.input-field{
+    font-size:15px;
+    background: lightgreen;
+    color: white;
+    height:50px;
+    width:100%;
+    padding:0 10px 0 45px;
+    border:none;
+    border-radius:30px;
+    outline: none;
+    transition: .2s ease;
+}
+.input-field:hover, .input-field:focus{
+    background: rgba(30, 7, 7, 0.25);
+}
+::-webkit-input-placeholder{
+    color: white;
+}
+.input-box i{
+    position:relative;
+    top:-35px;
+    left:17px;
+    color: white;
+
+}
+.submit{
+    font-size: 15px;
+    font-weight: 500;
+    color:black;
+    height:45px;
+    width:100%;
+    border: none;
+    border-radius: 30px;
+    outline: none;
+    background: silver;
+    cursor: pointer;
+    transition: .3s ease-in-out;
+    
+}
+.submit:hover{
+    background: rgba(255,255,255,0.5);
+    box-shadow:1px 5px 7px 1px black;
+}
+.two-col{
+    display:flex;
+    justify-content: space-between;
+    color: white;
+    font-size: small;
+    margin-top: 10px;
+}
+.two-col .one{
+    display:flex;
+    gap:5px;
+}
+.two label a{
+text-decoration: none;
+color:white;
+}
+.two label a:hover{
+    text-decoration:wavy;
+}

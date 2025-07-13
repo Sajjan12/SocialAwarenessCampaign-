@@ -1,0 +1,65 @@
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css"/>
+<style>
+  body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: url('Images/admin.jpeg') center center/cover no-repeat;
+  z-index: -2;
+}
+
+.overlay::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(242, 243, 248, 0.5); 
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+</style>
+</head>
+<body>
+   <div class="overlay"></div>
+  <header>
+    <div class="container">
+      <h1>Admin Dashboard</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="indexsigninsignup.html">Logout</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h2>Pending Campaigns for Approval</h2>
+    <div id="pendingCampaignList"></div>
+
+    <h2>Approved Campaigns </h2>
+    <div id="approvedCampaignList"></div>
+  </main>
+
+  <script src="adminscript.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

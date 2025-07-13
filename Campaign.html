@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Post a Campaign</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="campaignstyle.css"/>
+</head>
+<body>
+  <div class="overlay"></div>
+  <header>
+    <div class="container">
+      <h1>Submit a Social Campaign</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="programs.html">Programs</a>
+        <a href="contact.html">Contact</a>
+       <a href="Campaign.html">Campaign</a>
+        <a href="indexsigninsignup.html">Logout</a>
+      </nav>
+    </div>
+   
+  </header>
+
+    <main class="container">
+    <form id="campaignForm">
+      <h2>Post Your Campaign</h2>
+
+      <input type="text" id="name" placeholder="Your Name or Business Name" required /><br>
+      <input type="email" id="email" placeholder="Your Email" required /><br>
+      <input type="text" id="title" placeholder="Campaign Title" required /><br>
+      <textarea id="description" placeholder="Describe your cause..." required></textarea><br>
+
+      <select id="userType" required>
+        <option value="">Who are you?</option>
+        <option value="user">Individual</option>
+        <option value="business">Small Business</option>
+      </select><br>
+
+      <button type="submit">Submit Campaign</button>
+    </form>
+    <p id="message" style="margin-top: 10px; color: green;"></p>
+  </main>
+
+  
+  <script src="campaignscript.js"></script>
+</body>
+</html>
