@@ -98,7 +98,20 @@ nav a:hover {
   color: white;
   text-decoration: none;
 }
+.login-btn {
+  background-color: #2563eb; /* blue */
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
 
+.login-btn:hover {
+  background-color: #1e40af; /* darker blue */
+}
 .container {
   width: 90%;
   max-width: 1100px;
